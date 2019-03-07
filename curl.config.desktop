@@ -1,0 +1,4 @@
+-H "Accept-Encoding: deflate, gzip, br"
+-H "X-WIT-Debug: true"
+--write-out "lookup:        %{time_namelookup}\tconnect:       %{time_connect}\tappconnect:    %{time_appconnect}\tpretransfer:   %{time_pretransfer}\tredirect:      %{time_redirect}\tstarttransfer: %{time_starttransfer}\ttotal:         %{time_total}\n"
+-A "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36"

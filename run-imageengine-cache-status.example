@@ -1,0 +1,5 @@
+cat url.list | awk '{print "curl -K curl.config --resolve imageengine-shard-1-1081944623.ap-northeast-2.elb.amazonaws.com.  -sSI --header \"Host: assets.EXAMPLE.com\" https://assets.EXAMPLE.com/" $1}' |  sh  | grep x-ie-cache   
+cat url.list | awk '{print "curl  -K curl.config --resolve imageengine-shard-1-739365466.ap-south-1.elb.amazonaws.com. -sSI --header \"Host: assets.EXAMPLE.com\" https://assets.EXAMPLE.com/" $1}' |  sh  | grep x-ie-cache 
+cat url.list | awk '{print "curl -K curl.config --resolve imageengine-shard-1-1092425573.eu-west-3.elb.amazonaws.com. -sSI --header \"Host: assets.EXAMPLE.com\" https://assets.EXAMPLE.com/" $1}' |  sh  | grep x-ie-cache 
+cat url.list | awk '{print "curl -K curl.config --resolve imageengine-frontend-shard-1-1914976061.us-east-1.elb.amazonaws.com. -sSI --header \"Host: assets.EXAMPLE.com\" https://assets.EXAMPLE.com/" $1}' |  sh  | grep x-ie-cache 
+cat url.list | awk '{print "curl -K curl.config --resolve imageengine-shard-1-1833573616.us-west-1.elb.amazonaws.com -sSI --header \"Host: assets.EXAMPLE.com\" https://assets.EXAMPLE.com/" $1}' |  sh  | grep x-ie-cache 

@@ -1,0 +1,2 @@
+URL="https://renewalbyandersen.com/"
+awk -v URL=$URL '{print "curl -K curl.config -sSI  " URL  $1}' <url.list | sh  

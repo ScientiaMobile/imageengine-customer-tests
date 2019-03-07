@@ -1,0 +1,24 @@
+
+Dig (TTL):
+dig +noall +answer signaturehardware.com.imgeng.in
+
+Test the nearest loadbalancer:
+curl -K curl.config -sSI signaturehardware.com.imgeng.in/https://cdn.signaturehardware.com/media/wysiwyg/hp-slider-navy-vanities.jpg
+
+Current list of frontend load balancers -  loadbalancers
+
+# Targetting a specific load balancer (different region)
+
+curl -K curl.config -sSI --resolve imageengine-frontend-shard-2-753092560.us-east-1.elb.amazonaws.com signaturehardware.com.imgeng.in/https://cdn.signaturehardware.com/media/wysiwyg/hp-slider-navy-vanities.jpg
+
+# Similar methods can be used to warm the origin-cache
+
+run-imageengine
+
+#curl.config vs curl.config.desktop
+curl.config = Phone based UA
+curl.config.desktop = desktop based UA
+
+
+# Example Performance base line
+sh run-website | grep -e lookup -e location
