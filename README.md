@@ -1,4 +1,4 @@
-# ImageEngine-customer-testsDefine tests:
+# ImageEngine-customer-tests:
 
 Using the urls supplied by the customer, create requests to and from multiple geographic locations, both with and without cache-busting enabled. 
 Perform these tests multiple times over the course of several time periods within a 24 hour span. 
