@@ -1,0 +1,6 @@
+curl -k  --resolve imageengine-frontend-shard-b-596161632.us-east-1.elb.amazonaws.com http://images.abreutur.com.br/Files/Templates/Designs/Abreutur2016/css/abreuTur_Original.css > IMGENG.IAD
+curl -k --resolve imageengine-shard-b-1820738525.us-east-2.elb.amazonaws.com  http://images.abreutur.com.br/Files/Templates/Designs/Abreutur2016/css/abreuTur_Original.css > IMGENG.us-east-2
+curl -k --resolve imageengine-shard-b-1291338215.us-west-1.elb.amazonaws.com  http://images.abreutur.com.br/Files/Templates/Designs/Abreutur2016/css/abreuTur_Original.css > IMGENG.us-west-1
+curl -k --resolve imageengine-shard-b-1421990760.eu-west-3.elb.amazonaws.com  http://images.abreutur.com.br/Files/Templates/Designs/Abreutur2016/css/abreuTur_Original.css > IMGENG.eu-west-3
+curl -k --resolve imageengine-shard-b-997312170.ap-south-1.elb.amazonaws.com  http://images.abreutur.com.br/Files/Templates/Designs/Abreutur2016/css/abreuTur_Original.css > IMGENG.ap-south-1
+curl -k --resolve imageengine-shard-b-1444416839.ap-northeast-2.elb.amazonaws.com  http://images.abreutur.com.br/Files/Templates/Designs/Abreutur2016/css/abreuTur_Original.css > IMGENG.ap-northeast-2

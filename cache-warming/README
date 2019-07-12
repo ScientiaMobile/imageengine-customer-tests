@@ -1,0 +1,5 @@
+README			This file
+loadbalancers		List of loadbalancers
+uri			List of URIs - & needs to be escaped \&
+user-agents		List of user-agents (string, UA)
+warm.pl			Cache warming script that take the above files as input - always in dryrun mode. Must pipe through sh for execution

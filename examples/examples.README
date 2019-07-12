@@ -22,3 +22,7 @@ curl.config.desktop = desktop based UA
 
 # Example Performance base line
 sh run-website | grep -e lookup -e location
+
+
+http2 example
+curl -I --http2 https://assets.renewalbyandersen.com//
