@@ -1,15 +1,15 @@
 
 Dig (TTL):
-dig +noall +answer signaturehardware.com.imgeng.in
+dig +noall +answer domain.com.imgeng.in
 
 Test the nearest loadbalancer:
-curl -K curl.config -sSI signaturehardware.com.imgeng.in/https://cdn.signaturehardware.com/media/wysiwyg/hp-slider-navy-vanities.jpg
+curl -K curl.config -sSI domain.com.imgeng.in/https://cdn.domain.com/media/wysiwyg/hp-slider-navy-vanities.jpg
 
 Current list of frontend load balancers -  loadbalancers
 
 # Targetting a specific load balancer (different region)
 
-curl -K curl.config -sSI --resolve imageengine-frontend-shard-2-753092560.us-east-1.elb.amazonaws.com signaturehardware.com.imgeng.in/https://cdn.signaturehardware.com/media/wysiwyg/hp-slider-navy-vanities.jpg
+curl -K curl.config -sSI --resolve imageengine-frontend-shard-2-753092560.us-east-1.elb.amazonaws.com domain.com.imgeng.in/https://cdn.signaturehardware.com/media/wysiwyg/hp-slider-navy-vanities.jpg
 
 # Similar methods can be used to warm the origin-cache
 
@@ -25,4 +25,4 @@ sh run-website | grep -e lookup -e location
 
 
 http2 example
-curl -I --http2 https://assets.renewalbyandersen.com//
+curl -I --http2 https://assets.domain.com//
