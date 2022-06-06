@@ -1,0 +1,18 @@
+User-agent: *
+Disallow: /index.php/
+Disallow: /app/
+Disallow: /lib/
+Disallow: /*.php$
+Disallow: /pkginfo/
+Disallow: /report/
+Disallow: /var/
+Disallow: /catalog/
+Disallow: /sendfriend/
+Disallow: /review/
+Disallow: /searchanise/async/
+Disallow: /searchanise/result
+Disallow: /page_cache/block/esi/blocks/
+Disallow: /faqs/*
+Disallow: /author/limely/
+
+Sitemap: https://www.factory-direct-flooring.co.uk/sitemaps/website/sitemap.xml
