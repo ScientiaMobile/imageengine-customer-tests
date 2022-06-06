@@ -4,6 +4,7 @@ DOMAIN=$1
 LB=$2
 
 RESULT=`echo "" | openssl s_client -connect $LB:443 -servername $DOMAIN 2> /dev/null | grep $DOMAIN`
+echo $RESULT
 if [ $? == "0" ] 
 then
    # get cert 
